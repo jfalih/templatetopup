@@ -20,7 +20,7 @@
 .nominal{
     position: relative;
     flex:none;
-    margin-left:.25rem;
+    margin:.25rem;
 }
 .nominal:first-child{
     margin-left: 0;
