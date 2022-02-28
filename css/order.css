@@ -22,9 +22,6 @@
     flex:none;
     margin:.25rem;
 }
-.nominal:first-child{
-    margin-left: 0;
-}
 .label-nominal{
     padding:.85rem;
     cursor: pointer;
