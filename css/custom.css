@@ -1,0 +1,189 @@
+.navbar{
+    background-color: #212529;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.bg-dark-blue{
+    background-color: #0a1931;
+}
+.bg-blue-custom{
+    background-color: #2a528a;
+}
+.btn-primary-custom{
+    color: #fff;
+    background-color: #2a528a;
+    border-color: #2a528a;
+}
+.btn-primary-custom:hover{
+    background-color: #183968;
+    color:#fff;
+}
+a.card{
+    text-decoration: none;
+    color:#fff;
+    cursor: pointer;
+}
+.logo-navbar{
+    width: auto;
+    height: 40px;
+    text-decoration: none;
+}
+.nav-item{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav-item.active{
+    color:#fff !important;
+    font-weight: bold;
+}
+.navbar-brand{
+    padding-right: 3rem;
+}
+.nav-link{
+    color: #fff !important;
+}
+.nav-link:hover{
+    color: rgba(255,255,255,0.8) !important;
+}
+.title-section{
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.title-section::after{
+    content:'';
+    position: absolute;
+    bottom:-1rem;
+    width:50px;
+    height:5px;
+    border-radius: 10px;
+    background-color: #1c3378;
+}
+.list-category{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-category img{
+    width: 40px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: .5rem;
+    height: 40px;
+}
+.card-category{
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    margin:5px;
+    align-items: center;
+    text-decoration: none;
+    color:rgba(255,255,255,0.5);
+    padding:.5rem 1rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.card-category:hover{
+    cursor: pointer;
+    color:#fff;
+    border:1px solid #fff;
+}
+/* List Game Section */
+.list-game{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-game{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:rgba(255,255,255,0.5);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width:330px;
+    font-size: 14px;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.card-game img{
+    width: 80px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    height: 80px;
+}
+.card-game:hover{
+    cursor: pointer;
+    color:#fff;
+    border:1px solid #fff;
+}
+/* End Card Game */
+/* List Question */
+.list-question{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.icon-question{
+    width:50px;
+    height: 50px;
+    display: flex;
+    color:#b3b3b3;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.34);
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+}
+.question{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding:1rem;
+    border-radius: .5rem;
+    width:100%;
+}
+.search-button{
+    padding:.5rem 1.2rem;
+    border: none;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    color:#fff;
+}
+.search-button svg{
+    margin-right: .2rem;
+}
+.feather-16{
+    width: 16px;
+    height: 16px;
+    }
+.feather-24{
+    width: 24px;
+    height: 24px;
+}
+.feather-32{
+    width: 32px;
+    height: 32px;
+}
+.btn-bantuan{
+    display: flex;
+    align-items: center;
+    border-radius: 0 .2rem .2rem 0;
+}
+.number{
+    width:40px;
+    display: flex;
+    color:#fff;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 1rem;
+}
