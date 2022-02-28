@@ -195,13 +195,3 @@ a.card {
   align-items: center;
   border-radius: 0 0.2rem 0.2rem 0;
 }
-.number {
-  width: 40px;
-  display: flex;
-  color: #fff;
-  font-size: 24px;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  border-radius: 1rem;
-}
