@@ -7,13 +7,14 @@
     <title>Website - Judul WebsiteNya</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/custom.css"/>
+    <link rel="stylesheet" href="./css/order.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 <body class="bg-dark-blue text-light">
     <!-- Navbar Component -->
-    <nav class="navbar sticky-top navbar-expand-lg px-lg-3 bg-blue-custom text-light">
-      <div class="container-fluid px-2">
+    <nav class="navbar navbar-dark sticky-top navbar-expand-lg px-lg-3 bg-blue-custom text-light">
+      <div class="container-fluid px-4">
         <a class="navbar-brand" href="#">
           <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
         </a>
@@ -21,14 +22,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+          <ul class="navbar-nav ms-auto px-0 mb-2 mb-lg-0">
+            <li class="nav-item p-0">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item p-0">
               <a class="nav-link" href="./pesanan.html">Cek Pesanan</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown p-0">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Masuk/Daftar
               </a>
@@ -45,11 +46,20 @@
     <div class="container ">
         <div class="row mt-4">
           <div class="col-md-4 col-12">
-            <div class="col-12 text-md-left text-center">
-              <img src="https://viepay.id/assets/img/kategori/1641546789on.jpg" class="rounded img-fluid" style="border-radius: 10px;">
+            <div class="text-lg-start text-center">
+              <img width="300" src="https://viepay.id/assets/img/kategori/1641546789on.jpg" class="rounded img-fluid img-thumbnail mb-3" style="border-radius: 10px;">
+              <h3>Free Fire</h3>
+              <ol>
+                <li>Masukan <strong>ID (SERVER)</strong></li>
+                <li>Pilih <strong>Nominal Diamond</strong></li>
+                <li>Pilih Metode Pembayaran</li>
+                <li>Masukan Nomor <strong>Whatsapp </strong>Kamu</li>
+                <li>Klik <strong>Beli Sekarang</strong> &amp; Lakukan <strong>Pembayaran</strong></li>
+                <li>Jika Pembayaran Selesai Tunggu 1-10 Menit dan diamond akan masuk otomatis diakun anda</li>
+              </ol>
             </div>
           </div>
-          <div class="col-md-8">
+          <form class="col-md-8">
             <div class="card mb-3 text-dark">
               <div class="d-flex align-items-center card-header">
                 <div class="number bg-blue-custom">1</div>
@@ -59,7 +69,7 @@
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
                   <div class="input-group-append">
-                    <button class="btn btn-bantuan btn-primary-custom"><i data-feather="help-circle"></i>Bantuan</button>
+                    <button type="button" class="btn btn-bantuan btn-primary-custom" data-bs-toggle="modal" data-bs-target="#myModal"><i data-feather="help-circle"></i>Bantuan</button>
                   </div>
                 </div>
               </div>
@@ -70,6 +80,16 @@
                 <h5 class="mb-0 mx-2">Pilih Nominal</h5>
               </div>
               <div class="card-body">
+                <div class="list-nominal">
+                  <div class="nominal">
+                    <input type="radio" id="20000" value="20000" name="nominal">
+                    <label class="label-nominal" for="20000">Freefire 20.000</label>
+                  </div>
+                  <div class="nominal">
+                    <input type="radio" id="30000" value="20000" name="nominal">
+                    <label class="label-nominal" for="30000">Freefire 20.000</label>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="card mb-3 text-dark">
@@ -78,6 +98,28 @@
                 <h5 class="mb-0 mx-2">Pilih Pembayaran</h5>
               </div>
               <div class="card-body">
+                <div class="list-payment">
+                  <div class="payment">
+                    <input type="radio" name="payment" id="ovo">
+                    <label class="label-payment" for="ovo">
+                      <img class="img-payment" src="https://cdn1.codashop.com/S/content/common/images/mno/OVO_CHNL_LOGO.png"/>
+                      <div>
+                        <div class="title-payment">Harga</div>
+                        <div class="price-payment">Rp15.0000</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment">
+                    <input type="radio" name="payment" id="gopay">
+                    <label class="label-payment" for="gopay">
+                      <img class="img-payment" src="https://cdn1.codashop.com/S/content/common/images/mno/OVO_CHNL_LOGO.png"/>
+                      <div>
+                        <div class="title-payment">Harga</div>
+                        <div class="price-payment">Rp15.0000</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="card text-dark">
@@ -86,9 +128,15 @@
                 <h5 class="mb-0 mx-2">Beli</h5>
               </div>
               <div class="card-body">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nomor Whatsapp</label>
+                  <input type="email" placeholder="Nomor Whatsapp" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Dengan membeli kamu menyetujui ketentuan dan layanan.</div>
+                </div>
+                <button class="btn btn-primary-custom btn-lg">Beli Sekarang</button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
     </div>
     <footer
@@ -209,8 +257,23 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <!-- Footer -->
-    <!-- Footer Component -->
+    <div class="modal text-dark fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 <script src="https://unpkg.com/feather-icons"></script>
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 <script>
