@@ -55,6 +55,7 @@
     margin-top: 0;
 }
 .label-payment{
+    position: relative;
     padding:.85rem;
     display: flex;
     justify-content: space-between;
@@ -91,4 +92,21 @@
     background-color: #e6f0ff;
     color:#1a375f;
     border:1px solid #2a528a;
+}
+.label-payment .check-payment{
+    display: none;
+}
+.payment input[type="radio"]:checked + .label-payment .check-payment{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0px 15px 0px;
+    padding:5px 10px;
+    font-size: 12px;
+    background:#2a528a;
 }

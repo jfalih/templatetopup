@@ -15,6 +15,12 @@
 #loading.not-active{
   transform: translateX(-100%);
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 .navbar {
   z-index: 80;
   background-color: #212529;
