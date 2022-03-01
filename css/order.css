@@ -20,9 +20,9 @@
 .nominal{
     position: relative;
     flex:none;
-    margin:.25rem;
 }
 .label-nominal{
+    width:100%;
     padding:.85rem;
     cursor: pointer;
     font-weight: 600;
