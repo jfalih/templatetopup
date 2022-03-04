@@ -24,7 +24,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="bg-dark-blue position-relative vh-100 text-light">
+  <body class="bg-dark-blue h-100 text-light">
     <!-- Navbar Component -->
     <nav
       class="
@@ -36,7 +36,7 @@
         text-light
       "
     >
-      <div class="container-fluid px-4">
+      <div class="container">
         <a class="navbar-brand" href="#">
           <img
             src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
@@ -59,14 +59,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto px-0 mb-2 mb-lg-0">
             <li class="nav-item p-0">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item p-0">
               <a class="nav-link" href="./pesanan.html">Cek Pesanan</a>
             </li>
             <li class="nav-item dropdown p-0">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link active dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -85,232 +85,233 @@
       </div>
     </nav>
     <!-- Content Component -->
-    <div class="container mt-4">
-        <div class="card bg-dark-blue border-1 border-white">
-            <div class="card-body">
-                <div id="invoice">
-                    <div class="invoice overflow-auto">
-                        <div style="min-width: 600px">
-                            <main>
-                                <div class="row contacts">
-                                    <div class="col invoice-to">
-                                        <div class="text-gray-light">INVOICE TO:</div>
-                                        <h2 class="to">John Doe</h2>
-                                        <div class="address">796 Silver Harbour, TX 79273, US</div>
-                                        <div class="email"><a href="mailto:john@example.com">john@example.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="col invoice-details">
-                                        <h1 class="invoice-id">INVOICE 3-2-1</h1>
-                                        <div class="date">Date of Invoice: 01/10/2018</div>
-                                        <div class="date">Due Date: 30/10/2018</div>
-                                    </div>
-                                </div>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th class="text-left">DESCRIPTION</th>
-                                            <th class="text-right">HOUR PRICE</th>
-                                            <th class="text-right">HOURS</th>
-                                            <th class="text-right">TOTAL</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="no">04</td>
-                                            <td class="text-left">
-                                                <h3>
-                                                    <a target="_blank" href="javascript:;">
-                                            Youtube channel
-                                            </a>
-                                                </h3>
-                                                <a target="_blank" href="javascript:;">
-                                               Useful videos
-                                           </a> to improve your Javascript skills. Subscribe and stay tuned :)</td>
-                                            <td class="unit">$0.00</td>
-                                            <td class="qty">100</td>
-                                            <td class="total">$0.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="no">01</td>
-                                            <td class="text-left">
-                                                <h3>Website Design</h3>Creating a recognizable design solution based on the company's existing visual identity</td>
-                                            <td class="unit">$40.00</td>
-                                            <td class="qty">30</td>
-                                            <td class="total">$1,200.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="no">02</td>
-                                            <td class="text-left">
-                                                <h3>Website Development</h3>Developing a Content Management System-based Website</td>
-                                            <td class="unit">$40.00</td>
-                                            <td class="qty">80</td>
-                                            <td class="total">$3,200.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="no">03</td>
-                                            <td class="text-left">
-                                                <h3>Search Engines Optimization</h3>Optimize the site for search engines (SEO)</td>
-                                            <td class="unit">$40.00</td>
-                                            <td class="qty">20</td>
-                                            <td class="total">$800.00</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2"></td>
-                                            <td colspan="2">SUBTOTAL</td>
-                                            <td>$5,200.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2"></td>
-                                            <td colspan="2">TAX 25%</td>
-                                            <td>$1,300.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2"></td>
-                                            <td colspan="2">GRAND TOTAL</td>
-                                            <td>$6,500.00</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                <div class="thanks">Thank you!</div>
-                                <div class="notices">
-                                    <div>NOTICE:</div>
-                                    <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
-                                </div>
-                            </main>
-                            <footer>Invoice was created on a computer and is valid without the signature and seal.</footer>
-                        </div>
-                        <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="min-vh-100 h-100">
+      <div class="container mt-4">
+          <div class="card bg-dark-blue border-1 border-white">
+              <div class="card-body">
+                  <div id="invoice">
+                      <div class="invoice overflow-auto">
+                          <div style="min-width: 600px">
+                              <main>
+                                  <div class="row contacts">
+                                      <div class="col invoice-to">
+                                          <div class="text-gray-light">INVOICE TO:</div>
+                                          <h2 class="to">John Doe</h2>
+                                          <div class="address">796 Silver Harbour, TX 79273, US</div>
+                                          <div class="email"><a href="mailto:john@example.com">john@example.com</a>
+                                          </div>
+                                      </div>
+                                      <div class="col invoice-details">
+                                          <h1 class="invoice-id">INVOICE 3-2-1</h1>
+                                          <div class="date">Date of Invoice: 01/10/2018</div>
+                                          <div class="date">Due Date: 30/10/2018</div>
+                                      </div>
+                                  </div>
+                                  <table>
+                                      <thead>
+                                          <tr>
+                                              <th>#</th>
+                                              <th class="text-left">DESCRIPTION</th>
+                                              <th class="text-right">HOUR PRICE</th>
+                                              <th class="text-right">HOURS</th>
+                                              <th class="text-right">TOTAL</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="no">04</td>
+                                              <td class="text-left">
+                                                  <h3>
+                                                      <a target="_blank" href="javascript:;">
+                                              Youtube channel
+                                              </a>
+                                                  </h3>
+                                                  <a target="_blank" href="javascript:;">
+                                                Useful videos
+                                            </a> to improve your Javascript skills. Subscribe and stay tuned :)</td>
+                                              <td class="unit">$0.00</td>
+                                              <td class="qty">100</td>
+                                              <td class="total">$0.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="no">01</td>
+                                              <td class="text-left">
+                                                  <h3>Website Design</h3>Creating a recognizable design solution based on the company's existing visual identity</td>
+                                              <td class="unit">$40.00</td>
+                                              <td class="qty">30</td>
+                                              <td class="total">$1,200.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="no">02</td>
+                                              <td class="text-left">
+                                                  <h3>Website Development</h3>Developing a Content Management System-based Website</td>
+                                              <td class="unit">$40.00</td>
+                                              <td class="qty">80</td>
+                                              <td class="total">$3,200.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="no">03</td>
+                                              <td class="text-left">
+                                                  <h3>Search Engines Optimization</h3>Optimize the site for search engines (SEO)</td>
+                                              <td class="unit">$40.00</td>
+                                              <td class="qty">20</td>
+                                              <td class="total">$800.00</td>
+                                          </tr>
+                                      </tbody>
+                                      <tfoot>
+                                          <tr>
+                                              <td colspan="2"></td>
+                                              <td colspan="2">SUBTOTAL</td>
+                                              <td>$5,200.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2"></td>
+                                              <td colspan="2">TAX 25%</td>
+                                              <td>$1,300.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2"></td>
+                                              <td colspan="2">GRAND TOTAL</td>
+                                              <td>$6,500.00</td>
+                                          </tr>
+                                      </tfoot>
+                                  </table>
+                                  <div class="thanks">Thank you!</div>
+                                  <div class="notices">
+                                      <div>NOTICE:</div>
+                                      <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
+                                  </div>
+                              </main>
+                              <footer>Invoice was created on a computer and is valid without the signature and seal.</footer>
+                          </div>
+                          <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
+                          <div></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
     <!-- Footer Component -->
-    
-    <footer class="position-absolute bottom-0 text-center  w-100 text-lg-start bg-dark-blue mt-4 text-white">
-        <!-- Section: Social media -->
-        <section
-          class="
-            bg-blue-custom
-            p-4
-          "
-        >
-        <div class="d-flex
-        justify-content-between
-        align-items-center
-        container">
-          <!-- Left -->
-          <h6 class="mb-0">Kamu ingin langsung bertransaksi?</h6>
-          <!-- Left -->
-  
-          <!-- Right -->
-          <div>
-            <a href="" class="btn btn-outline-light">Daftar Sekarang</a>
-          </div>
-          <!-- Right -->
+    <footer class="text-center w-100 text-lg-start bg-dark-blue mt-4 text-white">
+      <!-- Section: Social media -->
+      <section
+        class="
+          bg-blue-custom
+          p-4
+        "
+      >
+      <div class="d-flex
+      justify-content-between
+      align-items-center
+      container">
+        <!-- Left -->
+        <h6 class="mb-0">Kamu ingin langsung bertransaksi?</h6>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="btn btn-outline-light">Daftar Sekarang</a>
         </div>
-        </section>
-        <!-- Section: Social media -->
-  
-        <!-- Section: Links  -->
-        <section class="">
-          <div class="container text-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3 ">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-5  mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold">NAMA WEBSITE</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block bg-primary"
-                  style="width: 60px; height: 2px"
-                />
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-              <!-- Grid column -->
-  
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2  mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Products</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block bg-primary"
-                  style="width: 60px; height: 2px"
-                />
-                <p>
-                  <a href="#!" class="text-white">Topup</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Game</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Voucher</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Lainnya</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-  
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Information</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block bg-primary"
-                  style="width: 60px; height: 2px"
-                />
-                <p>
-                  <a href="#!" class="text-white">Account</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Faq</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Terms</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-white">Help</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-  
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-4 col-xl-3 mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Contact</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block bg-primary"
-                  style="width: 60px; height: 2px"
-                />
-                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-              </div>
-              <!-- Grid column -->
+        <!-- Right -->
+      </div>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3 ">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-5  mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">NAMA WEBSITE</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block bg-primary"
+                style="width: 60px; height: 2px"
+              />
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
             </div>
-            <!-- Grid row -->
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2  mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block bg-primary"
+                style="width: 60px; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Topup</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Game</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Voucher</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Lainnya</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Information</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block bg-primary"
+                style="width: 60px; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Account</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Faq</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Terms</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-4 col-xl-3 mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block bg-primary"
+                style="width: 60px; height: 2px"
+              />
+              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
           </div>
-        </section>
-        <!-- Section: Links  -->
-  
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-          © 2020 Copyright:
-          <a class="text-white" href="https://example.com/">websitenya.com</a>
+          <!-- Grid row -->
         </div>
-        <!-- Copyright -->
-      </footer>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://example.com/">websitenya.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
     <!-- Modal Component -->
     <div
       class="modal text-dark fade"

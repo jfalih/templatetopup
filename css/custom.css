@@ -15,6 +15,10 @@
 #loading.not-active{
   transform: translateX(-100%);
 }
+.nav-link.active{
+  background-color: #0a1931;
+  border-radius: .5rem;
+}
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -28,6 +32,9 @@
 }
 .bg-dark-blue {
   background-color: #0a1931;
+}
+.bg-black-custom{
+  background-color: rgba(0,0,0,0.2);
 }
 .bg-blue-custom {
   background-color: #2a528a;
