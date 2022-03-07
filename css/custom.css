@@ -15,10 +15,14 @@
 #loading.not-active{
   transform: translateX(-100%);
 }
-.nav-link.active{
-  background-color: #0a1931;
-  border-radius: .5rem;
+@media screen and (min-width:700px) { 
+  .nav-link.active{
+    padding:.5rem 1rem;
+    background-color: #0a1931;
+    border-radius: .5rem;
+  } 
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -28,7 +32,7 @@
 .navbar {
   z-index: 80;
   background-color: #212529;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.34);
 }
 .bg-dark-blue {
   background-color: #0a1931;
