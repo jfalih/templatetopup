@@ -87,108 +87,72 @@
     <!-- Content Component -->
     <div class="min-vh-100 h-100">
       <div class="container mt-4">
-          <div class="card bg-dark-blue border-1 border-white">
+        <div class="row">
+          <div class="col-12 mt-3 mb-3">
+            <button class="btn btn-sm btn-primary" id="btn_print"><i data-feather="print"></i> Print Invoice</button>
+          </div>
+          <div class="col-12" id="area_print">
+            <div class="card bg-dark">
               <div class="card-body">
-                  <div id="invoice">
-                      <div class="invoice overflow-auto">
-                          <div style="min-width: 600px">
-                              <main>
-                                  <div class="row contacts">
-                                      <div class="col invoice-to">
-                                          <div class="text-gray-light">INVOICE TO:</div>
-                                          <h2 class="to">John Doe</h2>
-                                          <div class="address">796 Silver Harbour, TX 79273, US</div>
-                                          <div class="email"><a href="mailto:john@example.com">john@example.com</a>
-                                          </div>
-                                      </div>
-                                      <div class="col invoice-details">
-                                          <h1 class="invoice-id">INVOICE 3-2-1</h1>
-                                          <div class="date">Date of Invoice: 01/10/2018</div>
-                                          <div class="date">Due Date: 30/10/2018</div>
-                                      </div>
-                                  </div>
-                                  <table>
-                                      <thead>
-                                          <tr>
-                                              <th>#</th>
-                                              <th class="text-left">DESCRIPTION</th>
-                                              <th class="text-right">HOUR PRICE</th>
-                                              <th class="text-right">HOURS</th>
-                                              <th class="text-right">TOTAL</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody>
-                                          <tr>
-                                              <td class="no">04</td>
-                                              <td class="text-left">
-                                                  <h3>
-                                                      <a target="_blank" href="javascript:;">
-                                              Youtube channel
-                                              </a>
-                                                  </h3>
-                                                  <a target="_blank" href="javascript:;">
-                                                Useful videos
-                                            </a> to improve your Javascript skills. Subscribe and stay tuned :)</td>
-                                              <td class="unit">$0.00</td>
-                                              <td class="qty">100</td>
-                                              <td class="total">$0.00</td>
-                                          </tr>
-                                          <tr>
-                                              <td class="no">01</td>
-                                              <td class="text-left">
-                                                  <h3>Website Design</h3>Creating a recognizable design solution based on the company's existing visual identity</td>
-                                              <td class="unit">$40.00</td>
-                                              <td class="qty">30</td>
-                                              <td class="total">$1,200.00</td>
-                                          </tr>
-                                          <tr>
-                                              <td class="no">02</td>
-                                              <td class="text-left">
-                                                  <h3>Website Development</h3>Developing a Content Management System-based Website</td>
-                                              <td class="unit">$40.00</td>
-                                              <td class="qty">80</td>
-                                              <td class="total">$3,200.00</td>
-                                          </tr>
-                                          <tr>
-                                              <td class="no">03</td>
-                                              <td class="text-left">
-                                                  <h3>Search Engines Optimization</h3>Optimize the site for search engines (SEO)</td>
-                                              <td class="unit">$40.00</td>
-                                              <td class="qty">20</td>
-                                              <td class="total">$800.00</td>
-                                          </tr>
-                                      </tbody>
-                                      <tfoot>
-                                          <tr>
-                                              <td colspan="2"></td>
-                                              <td colspan="2">SUBTOTAL</td>
-                                              <td>$5,200.00</td>
-                                          </tr>
-                                          <tr>
-                                              <td colspan="2"></td>
-                                              <td colspan="2">TAX 25%</td>
-                                              <td>$1,300.00</td>
-                                          </tr>
-                                          <tr>
-                                              <td colspan="2"></td>
-                                              <td colspan="2">GRAND TOTAL</td>
-                                              <td>$6,500.00</td>
-                                          </tr>
-                                      </tfoot>
-                                  </table>
-                                  <div class="thanks">Thank you!</div>
-                                  <div class="notices">
-                                      <div>NOTICE:</div>
-                                      <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
-                                  </div>
-                              </main>
-                              <footer>Invoice was created on a computer and is valid without the signature and seal.</footer>
-                          </div>
-                          <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
-                          <div></div>
-                      </div>
+                <div class="row">
+                  <div class="col-12">
+                    <h4>INVOICE</h4>
                   </div>
+                  <div class="col-md-6 col-12">
+                    <div class="mb-2">Kode : ORDER1646739410IHL</div>
+                    <div class="mb-2">Tanggal : 2022-03-08 18:36:50</div>
+                  </div>
+                  <div class="col-md-6 col-12">Status :
+                    <span class="badge bg-primary">Not_paid</span>
+                  </div>
+                  <div class="col-12 mt-2">
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                  </div>
+                  <div class="col-12 table-responsive">
+                    <table class="table table-dark table-striped">
+                      <thead>
+                        <th>Kategori</th>
+                        <th>Layanan</th>
+                        <th>Data</th>
+                        <th>Qty</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Mobile Legends</td>
+                          <td>86 Diamond</td>
+                          <td>157228049|2241</td>
+                          <td>1</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                                  <div class="col-md-6 col-12 mb-3">
+                                        <img src="https://viepay.id/assets/img/164086109240346d_qris.png" style="width: 150px;" class="mb-2">
+                                      <p>QRIS mendukung pembayaran seperti ovo, dana, shopeepay, bca scan, dll. Silahkan scan kode barcode dibawah melalui aplikasi pembayaran favorit anda untuk membayar.</p>
+                                      <div class="text-md-left text-center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM8AAADPAQMAAABoTxccAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1UlEQVRYhe2XMY7kIBBFyyIgc18AiWuQcSX7Arb7AvaVyLgGEhfAGQFy7Wd2NfZEu4INGznyGw30p+r/MtFnfdZn/dsSzGHI8fBlMvEicTBvfWijyE6fPu5W7Jb3+qYLHTmeXuyS355G0ruN3SgMrOasZq9mp8b/gGIyzJnZhTlTP4IaifTbh9GKS4bxp1ANiDnu5n5+XmUDqjQZWiiMJsxeP963IXG6srqwQBBfVoY4pRMlg7LUydLq1erF+/G7mhCRhAji7cThyuzDK/eiwaE+xeHVgltjkeQtRxNC45QX693wyV8K810Abehwas16k4GsTgbb3fI2IXpxmExtxl2inMSZ7xpoQoJzlWL1RJZGWRuT+tBZ96LVwT3woInu2mhCNBm1WN7kb1vTRxadaM58USHcVy6LEZvkPoTDi2TVIlGfkEXz4yrb0EW15i/s5eJl8YQ+hDuCtrWJ3r6eHC63daGq6oVOh/d6fTrNOfYhqpJakQgNXlNss9yJEK/v2pUo+DDBQ+50aESjgVuqCXt5RvQ892pCNfQRr6dDhOGyxFOoVqQvywfTRJgrwsrciSDskNVo0D56s3DO2IeQXAjWMjAujp8G1YwwPp0eJlkm4mQwD9x7taHRqElqroMZAgLF/+1sbQhmi3+u2cUkdZLx7R6+0YJozTRzeXk1WX0Z9bivNoQSCjVYGSIrMmqUohMhXtkVknBLyIK//NapEXGuc/KBMe/r/Dv1oiQxfxIafDPla04rfQgvw1qHkzL4slgIcldpG4LxYpI/PM2eXg4FEKgLIR1gaGpmvjDwWMTNbeZN6I8gQ8a0jEJl+HAfqtNyqgNPhE+i8ve7KxvRhsMbnBxVik8t3roRPmGmauDIL9watr5/VCuCEdUPIpjbgEB8+EYrCmtWiMWzNviP8G1D+CZCgy8S6VCH+d3c7dCG6n0ZqBpmTCmmWvHWhT7rsz7rb+sXZWqhe3KL8SEAAAAASUVORK5CYII=" class="rounded img-fluid" style="border-radius: 10px;" width="220px"></div>                </div>
+                  <div class="col-md-6 col-12">
+                    <table class="table table-dark table-striped">
+                      <tr>
+                        <td>Harga</td>
+                        <td>
+                          Rp 20,370                      </td>
+                      </tr>
+                      <tr>
+                        <td>Fee Merchant</td>
+                        <td>Rp 143</td>
+                      </tr>
+                      <tr class="bg-primary font-weight-bold">
+                        <td>Total yang harus dibayar</td>
+                        <td>Rp 20,513</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
       </div>
     </div>
